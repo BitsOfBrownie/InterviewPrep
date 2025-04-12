@@ -1,6 +1,13 @@
-let octothorpe = ""
-for (let number = 0; number < 7; number += 1) 
+//Establishes char variable for pyramid constructon
+let pyramidBuildingBlockChar = "";
+
+//itterates through desired size of pyramid
+for (let i = 0; i < 7; i += 1) 
     {
-        octothorpe += "#"
-        console.log(octothorpe)
+
+        //adds the char to corrispond with loop
+        pyramidBuildingBlockChar += "#";
+
+        //prints out char to build pyramid
+        console.log(pyramidBuildingBlockChar);
     }
