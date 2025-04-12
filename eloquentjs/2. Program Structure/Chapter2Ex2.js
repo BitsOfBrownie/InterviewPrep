@@ -21,4 +21,8 @@ for (let i = 1; i <= 100; i++){
         //prints appropriate message
         console.log(`Fizz ${i}`);
     }
+    else{
+        //prints appropriate non-Fizz non-Buzz number
+        console.log(i); 
+    }
 }
