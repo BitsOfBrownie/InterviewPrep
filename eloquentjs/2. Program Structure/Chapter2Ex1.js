@@ -2,7 +2,7 @@
 let pyramidBuildingBlockChar = "";
 
 //itterates through desired size of pyramid
-for (let i = 0; i < 7; i += 1) 
+for (let i = 0; i < 7; i++) 
     {
 
         //adds the char to corrispond with loop
