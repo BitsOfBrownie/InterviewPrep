@@ -1,13 +1,12 @@
-//Establishes char variable for pyramid constructon
-let pyramidBuildingBlockChar = "";
+// Establishes String variable for Triangle constructon
+let TriangleBuildingBlockString = "";
 
-//itterates through desired size of pyramid
-for (let i = 0; i < 7; i++) 
-    {
+// Itterates through desired size of Triangle
+for (let i = 0; i < 7; i++) {
 
-        //adds the char to corrispond with loop
-        pyramidBuildingBlockChar += "#";
+        // Adds the String to corrispond with loop
+        TriangleBuildingBlockString += "#";
 
-        //prints out char to build pyramid
-        console.log(pyramidBuildingBlockChar);
-    }
+        // Prints out String to build Triangle
+        console.log(TriangleBuildingBlockString);
+}
