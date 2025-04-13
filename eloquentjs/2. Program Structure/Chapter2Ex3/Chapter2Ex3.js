@@ -1,39 +1,32 @@
-// Created variable for size and alternate levels of board
+// Created variable for size
 let size = 8;
-let evenStringForOutput = " #"
-let oddStringForOutput = "# "
 
-// Create the primary loop for length and width
-for (let i = 0; i < size; i++ ) {
+// Keeps track of when to alternate
+let count = size/2;
+let swap = true;
 
-    // Checks if size is even to determine what to print
-    if (size % 2 === 0) {
-        
-        // Checks if current loop is even for dependent output
-        if (i % 2 === 0) {
+// String to build board
+let stringForOutput = "";
 
-            // Prints characters for chosen width
-            console.log(evenStringForOutput.repeat(size/2));
-        }
-        else {
-            // Prints characters for chosen width
-            console.log(oddStringForOutput.repeat(size/2));
-        }
+// Cycles through the half the size of the whole board of charactors length
+for (let i = 0; i < (size*size)/2; i++) {
+
+    // Checks to see if it is time to swap patterns and add a break
+    if (i === count) {
+        stringForOutput += "\n";
+        count = count + size/2;
+        swap = !swap;
     }
 
-    // "size" is odd
+    // Adds appropriate pattern
+    if (swap) {
+        stringForOutput += " #";
+    }
+
+    // Adds appropriate pattern
     else {
-
-        // Checks if current loop is even for dependent output
-        if (i % 2 === 0) {
-
-            // Prints characters for chosen width with compensation for odd
-            console.log(evenStringForOutput.repeat((size -1)/2)+"#");
-        }
-        else {
-            
-            // Prints characters for chosen width with compensation for odd
-            console.log(oddStringForOutput.repeat((size -1)/2)+" ");
-        }
+        stringForOutput += "# ";
     }
 }
+// Prints finished board
+console.log(stringForOutput);
