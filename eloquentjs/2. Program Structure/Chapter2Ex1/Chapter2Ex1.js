@@ -1,12 +1,12 @@
-// Establishes String variable for Triangle constructon
+// Establishes string variable for triangle constructon
 let TriangleBuildingBlockString = "";
 
-// Itterates through desired size of Triangle
+// Iterates through desired size of triangle
 for (let i = 0; i < 7; i++) {
 
-        // Adds the String to corrispond with loop
+        // Adds the string to corrispond with loop
         TriangleBuildingBlockString += "#";
 
-        // Prints out String to build Triangle
+        // Prints out string to build triangle
         console.log(TriangleBuildingBlockString);
 }
