@@ -1,28 +1,18 @@
-//cycles through designated number
-for (let i = 1; i <= 100; i++){
-
-    //checks if division remainder is 0
-    if (i % 5 === 0 && i % 3 === 0){
-
-        //prints appropriate message
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 === 0 && i % 3 === 0) {
+        // Checks if division remainder for 5 and 3 is 0 and prints appropriate message
         console.log(`Fizz Buzz ${i}`);
     }
-
-    //checks if division remainder is 0
-    else if (i % 5 === 0){
-
-        //prints appropriate message
+    else if (i % 5 === 0) {
+        // Checks if division remainder is for 5 is 0 and prints appropriate message
         console.log(`Buzz ${i}`);
     }
-
-    //checks if division remainder is 0
-    else if (i % 3 === 0){
-
-        //prints appropriate message
+    else if (i % 3 === 0) {
+        // Checks if division remainder is for 3 is 0 and prints appropriate message
         console.log(`Fizz ${i}`);
     }
-    else{
-        //prints appropriate non-Fizz non-Buzz number
+    else {
+        // Prints appropriate non-Fizz non-Buzz number
         console.log(i); 
     }
 }
